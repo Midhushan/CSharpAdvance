@@ -9,6 +9,9 @@ namespace CSharpAdvance
         {
             SimpleInterest oSI = new SimpleInterest(5000, 12.5, 5);
             CompoundInterest oCI = new CompoundInterest(5000, 12.5, 5, 3);
+
+
+            oSI.Calculate(); oCI.Calculate();
             CompareInterest compare = new CompareInterest();
             compare.Compare(oSI, oCI);
 

@@ -4,7 +4,7 @@ using System.Text;
 
 namespace CSharpAdvance.Inheritance
 {
-    public partial class CompoundInterest : InterestBaseClass
+    public partial class CompoundInterest : InterestBaseClass, ICompareInterest
     {
         public int NoOfTimes { get; set; }
 
@@ -36,6 +36,11 @@ namespace CSharpAdvance.Inheritance
             base.Display();
             Console.WriteLine("No Of Times The Interest Componded : {0,10}", NoOfTimes);
             Console.WriteLine();
+        }
+
+        string ICompareInterest.Identify()
+        {
+            return "Compound Interest";
         }
     }
 }

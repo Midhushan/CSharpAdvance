@@ -33,7 +33,7 @@ namespace CSharpAdvance.Inheritance
 
         string ICompareInterest.Identify()
         {
-            return "Interest Base";
+            return this.GetType().ToString();
         }
 
         double ICompareInterest.InterestAmount()

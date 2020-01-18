@@ -4,7 +4,7 @@ using System.Text;
 
 namespace CSharpAdvance.Inheritance
 {
-    public interface ICompareInterest
+    public interface ICompareInterest 
     {
         string Identify();
         double InterestAmount();

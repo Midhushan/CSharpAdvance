@@ -28,7 +28,7 @@ namespace CSharpAdvance.Inheritance
             double subCalc = (1 + r / NoOfTimes);
             subCalc = Math.Pow(subCalc, NoOfTimes * NoOfYears);
             double A = Principle * subCalc;
-            IntrestAmount = A - Principle;
+            InterestAmount = A - Principle;
 
         }
         public override void Display()

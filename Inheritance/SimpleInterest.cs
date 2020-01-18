@@ -17,7 +17,7 @@ namespace CSharpAdvance.Inheritance
 
         public override void Calculate()
         {
-            IntrestAmount = Principle * RateOfInterest * NoOfYears / 100;
+            InterestAmount = Principle * RateOfInterest * NoOfYears / 100;
         }
     }
 }

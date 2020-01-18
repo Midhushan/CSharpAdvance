@@ -5,33 +5,48 @@ namespace CSharpAdvance
 {
     class Program
     {
-
-        static void Main(string[] args)
+        static void Main(string[] argd)
         {
-            SimpleInterest oSI = new SimpleInterest(5000, 15.5, 3);
-            oSI.Calculate();
-            oSI.Display();
-            oSI = null;
+            SimpleInterest oSI = new SimpleInterest(5000, 12.5, 5);
+            CompoundInterest oCI = new CompoundInterest(5000, 12.5, 5, 3);
+            CompareInterest compare = new CompareInterest();
+            compare.Compare(oSI, oCI);
 
-            CompoundInterest oCI = new CompoundInterest(5000, 15.5, 3, 4);
-            oCI.Calculate();
-            oCI.Display();
+            Console.WriteLine();
+            Console.WriteLine("Press any key");
+            Console.ReadLine();
+        }
+
+        //static void Main(string[] args)
+        //{
+        //    SimpleInterest oSI = new SimpleInterest(5000, 15.5, 3);
+        //    oSI.Calculate();
+        //    oSI.Display();
+           
+
+        //    CompoundInterest oCI = new CompoundInterest(5000, 15.5, 3, 4);
+        //    oCI.Calculate();
+        //    oCI.Display();
           
 
-            oCI.DeductServiceCharge(250);
-            oCI.Calculate();
-            oCI.Display();
+        //    oCI.DeductServiceCharge(250);
+        //    oCI.Calculate();
+        //    oCI.Display();
 
 
-            oCI.AddPrincipal(5000);
-            oCI.Calculate();
-            oCI.Display();
-            oCI = null;
+        //    oCI.AddPrincipal(5000);
+        //    oCI.Calculate();
+        //    oCI.Display();
 
 
 
-            Console.WriteLine("Press a key...");
-        }
+        //    oSI = null;
+        //    oCI = null;
+
+
+
+        //    Console.WriteLine("Press a key...");
+        //}
         //static void Main(string[] args)
         //{
 
